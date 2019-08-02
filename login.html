@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>LOGIN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+    <link rel="icon" type="icon" href="img/b.jpg">
+
+
 </head>
 <body>
-    <style>
-        body{
-            background:rgb(216, 20, 20);
-        }
-        h1{
-            padding-bottom:50px;
-            text-align: center;
-            margin-top: 5px;
-            
-        }
-        header{
-            background-color: rgb(27, 173, 83);
-        }
-        #nav-bar{
-            padding-top: 40px;
-        }
-        ul,a{
-           padding-left: 30px; 
-        }
-        #m2{
-            text-align: center;
-        }
-        </style>
-            <div >
-                <header>
-                    <nav>
-                        <ul>
-                            <div id="nav-bar">
-                            <h1><a href="index.html"><span>HOME</span></a>
-                            <a href="about.html"><span>ABOUT</span></a>
-                            <a href="login.html"><span>LOGIN</span></a></h2>
-                            </div>
-                        </ul>
-                    </nav>
-                </header>
+    
+  <header><center>
+    <img src="img/a.jfif" width="100px" height="100px">
+    <h3>Welcome To My Website</h3>
+  </center>
+  </header>
+      
+      <section>
+          <nav>
+              <div class="image-left">
+                  <img src= "img/d.jfif">
+              </div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>      
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </nav>
+        
+        <article>
+          <h1>Login</h1>
+          <form >
+            <div class="imgcontainer">
+              <img src="img/c.png" alt="Avatar" class="avatar">
             </div>
-            <form action="/action_page.php" id="m2">
-                Username<br>
-                <input type="text" name="firstname">
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Username" name="uname" required>
                 <br>
-                Password<br>
-                <input type="text" name="lastname">
-                <br><br>
-                <input type="submit" value="Submit">
-              </form>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Password" name="psw" required>
+                  
+              <button type="submit"><h4>Login</h4></button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+
+          
+        </article>
+      </section>
+      
+      <footer>
+        <p>&copy; Nothing Last Forever We Can Change The Future!</p>
+      </footer>
 </body>
 </html>
